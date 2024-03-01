@@ -4,34 +4,21 @@ Solución al ejercicio: https://www.codewars.com/kata/586c0909c1923fdb89002031/t
 
 # Análisis
 
-### Descripción del programa:
+### Descripción del cambio evolutivo a realizar:
 
-- El problema consiste en un tablero de 7 columnas por 6 filas donde dos jugadores colocan discos por turnos.
-- El objetivo es ser el primero en formar una línea de cuatro discos propios (horizontal o vertical).
-- Implementaremos una clase Connect4 con un método play que recibe la columna donde el jugador desea colocar su disco.
-- El juego debe manejar estados como victoria de un jugador, columna llena y finalización del juego, mostrando mensajes específicos en cada caso.
+- Se ha añadido una nueva condición de victoria a la aplicación: tener 4 discos posicionados diagonalmente.
+- Requisito de imprimir por la consola del IDE el juego. Se deberán mostrar las columnas y cómo se van colocando los discos.
+- También por consola se irá mostrando el turno de cada jugador así como la condición de victoria si se alcanza.
 
-### El programa contiene:
+### El programa deberá de contener:
 
-1. Diseñar la clase Connect4:
+1. Diseñar la clase checkDiagonal:
 
-  - Representación interna del tablero.
-  - Inicializa el tablero y el estado del juego.
-  - Alterna entre los jugadores tras cada movimiento válido.
+  - Comprobará la nueva condición de victoria que se pide.
 
-2. Implementar el método play(int column).
+2. Diseñar el método drawTable:
 
-  - Verifica si la columna está llena y retorna "Column full!" si es el caso.
-  - Coloca el disco en la posición adecuada.
-  - Verifica si el movimiento resulta en un ganador.
-  - Cambia el turno al siguiente jugador si el juego continúa.
-
-3. Métodos adicionales:
-
-  - Verifica el estado del tablero y buscar ganadores.
-  - Tener en cuenta la lógica de cambio de turnos.
-
-4. Gestión de los estados:
-
-  - Mantiene el control del jugador actual.
-  - Mantiene el estado de la partida (en juego, ganada, etc.).
+  - Irá imprimiendo por pantalla el tablero.
+  - Deberá mostrar el estado del tablero en todo momento.
+  - Mostrar cambios de turnos de jugador.
+  - Estado final del juego.
