@@ -133,6 +133,8 @@ public class Connect4 {
 
     }
 
+    // Hola
+
     public boolean winningCondition () {
 
         return (checkHorizontal() || checkVertical() || checkDiagonal());
