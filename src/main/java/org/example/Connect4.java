@@ -102,6 +102,7 @@ public class Connect4 {
         return exit = false;
     }
 
+    // Simulación de que se ha añadido el método checkDiagonal
 
     public boolean checkDiagonal () {
 
@@ -133,7 +134,6 @@ public class Connect4 {
 
     }
 
-    // Hola
 
     public boolean winningCondition () {
 
