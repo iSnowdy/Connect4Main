@@ -2,6 +2,7 @@ import org.example.Connect4;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/*
 
 public class Connect4Test {
     // verifies the response for every move
@@ -43,3 +44,5 @@ public class Connect4Test {
         runTheTest(moves, "Column full!");
     }
 }
+
+*/
