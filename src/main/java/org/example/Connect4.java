@@ -164,4 +164,8 @@ public class Connect4 { // Main
             System.out.println(game.Play(scanner.nextInt()));
         }
     }
+
+    // Editando el archivo.java para simular un conflicto en GitHub
+    // Se debería hacer Pull & Merge de un mensaje de felicitación por ganar el juego
+    
 }
