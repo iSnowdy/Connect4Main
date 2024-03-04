@@ -23,7 +23,7 @@ public class Connect4 { // Main
         // We check for the rules of the game
 
         if (exit) {
-            return "Game has finished! See you later"; // Heya
+            return "Game has finished!;
         }
 
         if (column < 0 || column > 6) {
@@ -97,36 +97,8 @@ public class Connect4 { // Main
         return exit = false;
     }
 
-    private boolean checkDiagonal() {
-        for (int row = 0; row < 3; row++) { // Bottom left ---> Top right
-            for (int col = 0; col < 4; col++) {
-                if (    table[row][col] == currentPlayer &&
-                        table[row + 1][col + 1] == currentPlayer &&
-                        table[row + 2][col + 2] == currentPlayer &&
-                        table[row + 3][col + 3] == currentPlayer) {
-
-                    // System.out.println(Arrays.deepToString(table));
-                    return exit = true;
-                }
-            }
-        }
-        for (int row = 0; row < 3; row++) { // Bottom right --> Top left
-            for (int col = 3; col < 7; col++) {
-                if (    table[row][col] == currentPlayer &&
-                        table[row + 1][col - 1] == currentPlayer &&
-                        table[row + 2][col - 2] == currentPlayer &&
-                        table[row + 3][col - 3] == currentPlayer) {
-
-                    // System.out.println(Arrays.deepToString(table));
-                    return exit = true;
-                }
-            }
-        }
-        return exit = false;
-    }
-
     private boolean isWinningMove() {
-        return checkHorizontal() || checkVertical() || checkDiagonal();
+        return checkHorizontal() || checkVertical();
     }
 
 
@@ -183,4 +155,8 @@ public class Connect4 { // Main
             System.out.println(game.Play(scanner.nextInt()));
         }
     }
+
+    // Editando el archivo.java para simular un conflicto en GitHub
+    // Se debería hacer Pull & Merge de un mensaje de felicitación por ganar el juego
+    
 }
