@@ -1,10 +1,9 @@
 package org.example;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Connect4 { // Main
-    private int[][] table;
+    final private int[][]table;
     int currentPlayer; // 1 or 2
     boolean exit; // state of the game
 
