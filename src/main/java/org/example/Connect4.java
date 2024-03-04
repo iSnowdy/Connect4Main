@@ -24,7 +24,8 @@ public class Connect4 { // Main
         // We check for the rules of the game
 
         if (exit) {
-            return "Game has finished!";
+            return "Game has not finished! Im doing this to test conflicts";
+            System.out.println("Hi");
         }
 
         if (column < 0 || column > 6) {
