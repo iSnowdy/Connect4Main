@@ -23,7 +23,7 @@ public class Connect4 { // Main
         // We check for the rules of the game
 
         if (exit) {
-            return "Game has finished!";
+            return "Game has finished! See you later"; // Heya
         }
 
         if (column < 0 || column > 6) {
