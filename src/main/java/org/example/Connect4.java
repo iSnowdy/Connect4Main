@@ -39,6 +39,7 @@ public class Connect4 { // Main
         if (isWinningMove()) {
             drawTable();
             exit = true;
+            congratulateWinner();
             return "Player " + currentPlayer + " wins!";
         }
 
@@ -151,6 +152,25 @@ public class Connect4 { // Main
         }
         System.out.println("-----------------------------");
         System.out.println("  0   1   2   3   4   5   6");
+    }
+
+    private void congratulateWinner() {
+        System.out.println("Congratulations Player " + currentPlayer + "!");
+        if (currentPlayer == 1) {
+            System.out.println("   _____          __  __ ______    ______      ________ _____  ");
+            System.out.println("  / ____|   /\\   |  \\/  |  ____|  / __ \\ \\    / /  ____|  __ \\ ");
+            System.out.println(" | |  __   /  \\  | \\  / | |__    | |  | \\ \\  / /| |__  | |__) |");
+            System.out.println(" | | |_ | / /\\ \\ | |\\/| |  __|   | |  | |\\ \\/ / |  __| |  _  / ");
+            System.out.println(" | |__| |/ ____ \\| |  | | |____  | |__| | \\  /  | |____| | \\ \\ ");
+            System.out.println("  \\_____/_/    \\_\\_|  |_|______|  \\____/   \\/   |______|_|  \\_\\");
+        } else {
+            System.out.println("   _____          __  __ ______    ______      ________ _____  ");
+            System.out.println("  / ____|   /\\   |  \\/  |  ____|  / __ \\ \\    / /  ____|  __ \\ ");
+            System.out.println(" | |  __   /  \\  | \\  / | |__    | |  | \\ \\  / /| |__  | |__) |");
+            System.out.println(" | | |_ | / /\\ \\ | |\\/| |  __|   | |  | |\\ \\/ / |  __| |  _  / ");
+            System.out.println(" | |__| |/ ____ \\| |  | | |____  | |__| | \\  /  | |____| | \\ \\ ");
+            System.out.println("  \\_____/_/    \\_\\_|  |_|______|  \\____/   \\/   |______|_|  \\_\\");
+        }
     }
 
     public static void main(String[] args) {
